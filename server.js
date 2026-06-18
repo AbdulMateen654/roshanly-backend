@@ -9,7 +9,7 @@ const app = express();
 const corsOptions = {
     origin: [
         "http://localhost:5173",              // your local frontend
-        "https://roshanly-frontend.vercel.app/"   // your deployed frontend (update this after deploying)
+        "https://your-actual-vercel-url.vercel.app"    // your deployed frontend (update this after deploying)
     ],
     credentials: true
 };
