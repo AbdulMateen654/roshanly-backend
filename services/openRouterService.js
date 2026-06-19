@@ -1,7 +1,7 @@
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
-const summarizeText = async (text) => {
+const summarizeText = async (text, retries =2 ) => {
     try {
 
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -104,8 +104,11 @@ return parsed;
   
 
     } catch (error) {
+        if (retries > 0) {
+            console.error(`Summarize failed, retrying... (${retries} left)`);
+            return summarizeText(text, retries - 1);
+        }
         console.error("AI failed → fallback activated");
-
         return fallbackSummary(text);
     }
 };
