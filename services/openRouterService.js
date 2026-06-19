@@ -45,7 +45,7 @@ HARD RULES:
                     },
                     {
                         role: "user",
-                        content: text.slice(0, 2000)
+                        content: text.slice(0, 3000)
                     }
                 ]
             })
