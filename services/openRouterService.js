@@ -130,7 +130,7 @@ const fallbackSummary = (text) => {
         summary: summary || "• No summary available"
     };
 };
-const generateQuiz = async (summary) => {
+const generateQuiz = async (summary,retries = 2) => {
     try {
 
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -207,6 +207,10 @@ const parsed = JSON.parse(fixedJson);
         return parsed;
 
     } catch (error) {
+        if (retries > 0) {
+            console.error(`Quiz failed, retrying... (${retries} left)`);
+            return generateQuiz(summary, retries - 1);
+        }
         console.error("Quiz AI failed →", error.message);
         return fallbackQuiz();
     }
