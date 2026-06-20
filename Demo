@@ -26,3 +26,61 @@ Artificial Intelligence, commonly known as AI, refers to the simulation of human
 Modern AI is largely driven by machine learning, a subset of AI where systems learn from data rather than being explicitly programmed. Deep learning, a further subset, uses neural networks with many layers to recognize patterns in images, speech, and text. This technology powers everyday tools like voice assistants, recommendation systems on Netflix and YouTube, and language models like the one powering Roshanly.
 
 AI is transforming every industry — from healthcare, where algorithms detect cancer in scans with 94% accuracy, to finance, where AI detects fraudulent transactions in milliseconds. However, it also raises important ethical questions around job displacement, bias in algorithms, and data privacy. Understanding AI is no longer optional — it is one of the most critical literacies of the 21st century.
+
+
+
+Understanding Types of Agents in AI with Simple Examples
+Artificial Intelligence (AI) agents are computer programs that can make decisions based
+on their environment. There are diƯerent types of AI agents, each with diƯerent levels of
+intelligence and decision-making abilities.
+1. Simple Reflex Agents
+Definition: These agents work on the principle of "IF this happens, THEN do that." They
+only respond to the current situation without considering past experiences.
+Example:
+ A thermostat is a simple reflex agent. If the temperature is too hot, it turns on
+the air conditioner; if it's too cold, it turns on the heater.
+ A self-driving car stopping when it sees a red traƯic light. It doesn't remember
+past lights, it just reacts to what it sees at the moment.
+Limitation:
+ It cannot handle complex situations because it does not have memory or
+consider future consequences.
+2. Model-Based Reflex Agents
+Definition: These agents maintain an internal model (or memory) of the world to
+understand what is happening beyond their immediate perception.
+Example:
+ A robot vacuum cleaner that remembers which areas of the room it has already
+cleaned and which areas still need cleaning.
+ A self-driving car that remembers where other vehicles were a few seconds ago
+to predict their movement.
+Limitation:
+ It needs a good model of the world to make intelligent decisions.
+3. Goal-Based Agents
+Definition: These agents have a goal and try to achieve it by planning their actions.
+Example:
+ Google Maps is a goal-based agent. If you want to travel from Point A to Point B,
+it looks at diƯerent routes and picks the best one.
+ A chess-playing AI that thinks about the best moves to win the game, not just
+react to the opponent's move.
+Limitation:
+ If there are many possible actions, the agent may take too long to decide the best
+one.
+4. Utility-Based Agents
+Definition: These agents not only achieve goals, but also maximize happiness (utility)
+by picking the best possible option.
+Example:
+ A self-driving taxi does not just find a route (goal-based), but finds the fastest
+and cheapest route considering traƯic, fuel consumption, and comfort.
+ Netflix recommendation system suggests movies that you are most likely to
+enjoy, not just any random movie.
+Limitation:
+ It requires a way to measure happiness (utility), which can be complex.
+5. Learning-Based Agents
+Definition: These agents improve their performance over time by learning from past
+experiences.
+Example:
+ A voice assistant like Siri or Alexa learns from your voice patterns and improves
+speech recognition.
+ A spam filter in email gets better at identifying spam emails based on what
+users mark as spam.
+Limitation:
+ It requires a lot of data to learn eƯectively.
